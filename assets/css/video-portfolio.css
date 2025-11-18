@@ -1,0 +1,121 @@
+/* Video Portfolio Styles */
+
+.video-box {
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background: #000;
+    overflow: hidden;
+}
+
+.portfolio-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s ease;
+    padding: 20px;
+}
+
+.video-box:hover .video-overlay {
+    background: rgba(0, 0, 0, 0.85);
+    opacity: 1;
+}
+
+.video-info {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.video-box:hover .video-info {
+    transform: translateY(0);
+}
+
+.video-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #00d4ff;
+}
+
+.video-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ddd;
+    margin: 0;
+}
+
+.video-play-btn {
+    width: 70px;
+    height: 70px;
+    background: #00d4ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.video-box:hover .video-play-btn {
+    transform: scale(1);
+}
+
+.video-play-btn:hover {
+    background: #fff;
+    color: #00d4ff;
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.8);
+}
+
+/* Auto-play on hover */
+.video-box:hover .portfolio-video {
+    /* Video will auto-play via JavaScript */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-info h3 {
+        font-size: 18px;
+    }
+    
+    .video-info p {
+        font-size: 13px;
+    }
+    
+    .video-play-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+    }
+}

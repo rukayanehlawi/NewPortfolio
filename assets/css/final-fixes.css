@@ -1,0 +1,150 @@
+/* ===== التصحيحات النهائية ===== */
+
+/* 1. تصغير دوائر الأيقونات */
+.footer_social_icon a {
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    background-color: #00d4ff !important;
+    border-radius: 50% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 5px !important;
+    transition: all 0.3s ease !important;
+    padding: 0 !important;
+}
+
+.footer_social_icon a:hover {
+    background-color: #00a8cc !important;
+    transform: scale(1.15) !important;
+}
+
+.footer_social_icon a i {
+    color: #fff !important;
+    font-size: 16px !important;
+    line-height: 1 !important;
+}
+
+/* 2. تغيير لون الماوس إلى أزرق */
+#magic-cursor {
+    border: 2px solid #00d4ff !important;
+}
+
+#magic-cursor.cursor-hover {
+    background-color: rgba(0, 212, 255, 0.2) !important;
+    border-color: #00d4ff !important;
+}
+
+.cursor-pointer {
+    background-color: #00d4ff !important;
+}
+
+/* 3. إخفاء اللوغو في Hero section */
+.about_me_content .logo,
+.about_me_content img[src*="logo"] {
+    display: none !important;
+}
+
+/* 4. إبقاء النص ظاهراً في Portfolio */
+.portfolio_content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+.single_portfolio .portfolio_content h3,
+.single_portfolio .portfolio_content p {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* 5. توسيط الوصف مع مسافات متساوية */
+.portfolio_content {
+    margin-top: 20px !important;
+    padding: 15px 20px !important;
+    text-align: left !important;
+}
+
+.single_portfolio {
+    padding: 0 15px !important;
+    margin-bottom: 40px !important;
+}
+
+/* 6. تحسين صورة About */
+.about_me_img img {
+    max-width: 280px !important;
+    width: 280px !important;
+    height: auto !important;
+    border-radius: 8px !important;
+}
+
+/* 7. إصلاح عرض الفيديوهات */
+.portfolio-video {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    border-radius: 0 !important;
+    background-color: #000 !important;
+    display: block !important;
+    min-height: 200px !important;
+}
+
+
+/* 8. تحسين الفلترة */
+.portfolio_filter ul li {
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.portfolio_filter ul li.active {
+    background-color: #00d4ff !important;
+    border-color: #00d4ff !important;
+    color: #fff !important;
+}
+
+.portfolio_filter ul li:hover {
+    background-color: #00d4ff !important;
+    border-color: #00d4ff !important;
+    color: #fff !important;
+}
+
+/* 9. responsive */
+@media (max-width: 768px) {
+    .footer_social_icon a {
+        width: 35px !important;
+        height: 35px !important;
+        line-height: 35px !important;
+    }
+    
+    .footer_social_icon a i {
+        font-size: 14px !important;
+    }
+    
+    .portfolio-video {
+        height: 280px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer_social_icon a {
+        width: 32px !important;
+        height: 32px !important;
+        line-height: 32px !important;
+        margin: 0 3px !important;
+    }
+    
+    .footer_social_icon a i {
+        font-size: 13px !important;
+    }
+    
+    .portfolio-video {
+        height: 220px !important;
+    }
+    
+    .portfolio_content {
+        padding: 10px 15px !important;
+    }
+}
+

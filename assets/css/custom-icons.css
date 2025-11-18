@@ -1,0 +1,33 @@
+/* Custom Blue Circular Icons for Footer */
+.footer_social_profile ul li a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00d4ff;
+    color: #fff !important;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.footer_social_profile ul li a:hover {
+    background-color: #0099cc;
+    transform: scale(1.1);
+}
+
+.footer_social_profile ul li a i {
+    color: #fff !important;
+}
+
+/* Hide text, show only icons */
+.footer_social_profile ul li a {
+    font-size: 0;
+}
+
+.footer_social_profile ul li a i {
+    font-size: 20px;
+}
+
