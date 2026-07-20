@@ -32,6 +32,39 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/ico/apple-touch-icon-114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="images/ico/apple-touch-icon-144.png">
 
+	<!-- Added: styling for the centered "open" button on each video -->
+	<style>
+		.portfolio-item {
+			position: relative;
+		}
+
+		.open-media-btn {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 56px;
+			height: 56px;
+			border-radius: 50%;
+			background: rgba(0, 0, 0, 0.6);
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			font-size: 22px;
+			z-index: 10;
+			transition: background 0.3s ease, transform 0.2s ease;
+			pointer-events: auto;
+		}
+
+		.open-media-btn:hover {
+			background: rgba(0, 0, 0, 0.85);
+			color: #fff;
+			transform: translate(-50%, -50%) scale(1.1);
+		}
+	</style>
+
 </head>
 
 <body data-spy="scroll" data-target="#mynav" data-offset="85">
@@ -296,6 +329,47 @@
 
 	<div class="motion-portfolio-container">
 
+  <div class="portfolio-item">
+
+  <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline
+    controls
+    controlsList="nodownload"
+    oncontextmenu="return false"
+   >
+    <source src="vids/video01.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <a href="vids/video01.mp4" target="_blank" class="open-media-btn" title="Open video">▶</a>
+
+  <div class="website-desc">
+    <p>Velador</p>
+  </div>  </div>
+
+  <div class="portfolio-item">
+
+  <video 
+    autoplay 
+    loop 
+    muted 
+    playsinline
+    controls
+    controlsList="nodownload"
+    oncontextmenu="return false"
+   >
+    <source src="vids/jump.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+   <!-- Has a social link, so the button opens that instead of the raw video -->
+  <a href="https://www.facebook.com/share/v/1A4LEXfNb4/"
+     target="_blank"
+     class="open-media-btn"
+     title="View on Facebook">▶</a> </div>
 
 <div class="portfolio-item">
 
@@ -312,8 +386,14 @@
     Your browser does not support the video tag.
   </video>
 
+   <!-- Has a social link, so the button opens that instead of the raw video -->
+  <a href="https://www.instagram.com/reel/DULGcxskrvi/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+     target="_blank"
+     class="open-media-btn"
+     title="View on Instagram">▶</a>
+
   <div class="website-desc">
-    <p>Vintage</p>
+    <p>Comtech</p>
   </div>
 
 </div>
@@ -332,6 +412,8 @@
     <source src="vids/s.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <a href="vids/s.mp4" target="_blank" class="open-media-btn" title="Open video">▶</a>
 
   <div class="website-desc">
     <p>Vintage</p>
@@ -354,32 +436,13 @@
     Your browser does not support the video tag.
   </video>
 
+  <a href="vids/Mbank’s Eid al-Fitr greeting - 4.mp4" target="_blank" class="open-media-btn" title="Open video">▶</a>
+
   <div class="website-desc">
     <p>Velador</p>
   </div>
   </div>
 
-
-<div class="portfolio-item">
-
-  <video 
-    autoplay 
-    loop 
-    muted 
-    playsinline
-    controls
-    controlsList="nodownload noplaybackrate"
-    oncontextmenu="return false"
-  >
-    <source src="vids/Vintage 12 reel.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <div class="website-desc">
-    <p>Vintage</p>
-  </div>
-
-</div>
 
 
 <div class="portfolio-item">
@@ -397,9 +460,12 @@
     Your browser does not support the video tag.
   </video>
 
-  <div class="website-desc">
-    <p>Skillet</p>
-  </div>
+   <!-- Has a social link, so the button opens that instead of the raw video -->
+  <a href="https://www.youtube.com/watch?v=gI7mqLA3YSY"
+     target="_blank"
+     class="open-media-btn"
+     title="View on Youtube">▶</a>
+
 
 </div>
 
@@ -419,12 +485,8 @@
     Your browser does not support the video tag.
   </video>
 
-  <!-- Website Icon -->
-  <a href="https://www.instagram.com/reel/DQHhwhDiHTo/?utm_source=ig_web_copy_link&igsh=cHR4c3A0OHFkMHN5" 
-     target="_blank" 
-     class="icon website-icon">
-     🌐
-  </a>
+
+  <a href="vids/Faisal Reel 02.mp4" target="_blank" class="open-media-btn" title="Open video">▶</a>
 
   <!-- Description -->
   <div class="website-desc">
@@ -448,9 +510,12 @@
     Your browser does not support the video tag.
   </video>
 
-  <div class="website-desc">
-    <p>Velador</p>
-  </div>
+   <!-- Has a social link, so the button opens that instead of the raw video -->
+  <a href="https://www.instagram.com/reel/DUTT_JuiFG9/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+     target="_blank"
+     class="open-media-btn"
+     title="View on Instagram">▶</a>
+
 
 </div>
 
@@ -469,6 +534,8 @@
     <source src="vids/Crown Reel4.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <a href="vids/Crown Reel4.mp4" target="_blank" class="open-media-btn" title="Open video">▶</a>
 
   <div class="website-desc">
     <p>Velador</p>
@@ -491,48 +558,14 @@
     Your browser does not support the video tag.
   </video>
 
-  <div class="website-desc">
-    <p>Velador</p>
+   <!-- Has a social link, so the button opens that instead of the raw video -->
+  <a href="https://www.instagram.com/reels/DQHhwhDiHTo/"
+     target="_blank"
+     class="open-media-btn"
+     title="View on Instagram">▶</a>
+
+
   </div>
-  </div>
-
-  <div class="portfolio-item">
-
-  <video 
-    autoplay 
-    loop 
-    muted 
-    playsinline
-    controls
-    controlsList="nodownload"
-    oncontextmenu="return false"
-   >
-    <source src="vids/jump.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <div class="website-desc">
-    <p>Velador</p>
-  </div>  </div>
-
-  <div class="portfolio-item">
-
-  <video 
-    autoplay 
-    loop 
-    muted 
-    playsinline
-    controls
-    controlsList="nodownload"
-    oncontextmenu="return false"
-   >
-    <source src="vids/video01.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <div class="website-desc">
-    <p>Velador</p>
-  </div>  </div>
 
 <div class="portfolio-item">
 
@@ -548,6 +581,8 @@
     <source src="vids/Mbank 402 - Diwali Offers 2025.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <a href="vids/Mbank 402 - Diwali Offers 2025.mp4" target="_blank" class="open-media-btn" title="Open video">▶</a>
 
   <div class="website-desc">
     <p>Velador</p>
@@ -568,6 +603,8 @@
     Your browser does not support the video tag.
   </video>
 
+  <a href="vids/Reel 4 -Valentine's Day_1.mp4" target="_blank" class="open-media-btn" title="Open video">▶</a>
+
   <div class="website-desc">
     <p>Velador</p>
   </div>  </div>
@@ -586,6 +623,8 @@
     <source src="vids/AEC 074.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+
+  <a href="vids/AEC 074.mp4" target="_blank" class="open-media-btn" title="Open video">▶</a>
 
   <div class="website-desc">
     <p>Velador</p>
